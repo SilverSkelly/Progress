@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+.logo {
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+    font-family: "Bangers", system-ui;
+    font-style: normal;
+}
+
+.navbar {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
