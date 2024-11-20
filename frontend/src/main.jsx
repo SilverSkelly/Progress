@@ -9,6 +9,10 @@ import CSScard from './homecards/CSScard'
 import JavascriptCard from './homecards/JavascriptCard'
 import PythonCard from './homecards/PythonCard'
 import Fundamentals from './pages/Fundamentals'
+import CSS from './pages/CSS'
+import Python from './pages/Python'
+import HTML from './pages/HTML'
+import Javascript from './pages/Javascript'
 
 import {
   createBrowserRouter,
@@ -42,22 +46,22 @@ const router = createBrowserRouter([
 
 {
   path: "/html",
-  element: <HTMLcard/>
+  element: <HTML/>
 },
 
 {
   path: "/css",
-  element: <CSScard/>
+  element: <CSS/>
 },
 
 {
   path: "/javascript",
-  element: <JavascriptCard/>
+  element: <Javascript/>
 },
 
 {
   path: "/python",
-  element: <PythonCard/>
+  element: <Python/>
 },
 
 ]);
