@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom';
-import Syntax from '../vocabcards/Fundamentals_vocab.jsx/syntax';
+import Syntax from '../vocabulary_cards/Fundamentals_vocab.jsx/syntax';
 
 function Fundamentals() {
   return (
