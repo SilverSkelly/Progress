@@ -6,10 +6,10 @@ import { BrowserRouter, Link } from 'react-router-dom';
 function Syntax() {
   return (
     <div className="vocabCard">
-        <h2>Syntax</h2>
+        <h2>Syntax </h2>
     </div>
     
   )
 }
-
+ 
 export default Syntax
