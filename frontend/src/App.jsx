@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Card from "./Card.jsx";
+import "./App.jsx";
+import "./index.css";
+import Navbar from "./nav/navbar.jsx";
+import FundamentalsCard from "./homecards/FundamentalsCard.jsx";
+import Fundamentals from "./pages/Fundamentals";
+import HTMLcard from "./homecards/HTMLcard.jsx";
+import CSScard from "./homecards/CSScard.jsx";
+import JavascriptCard from "./homecards/JavascriptCard.jsx";
+import PythonCard from "./homecards/PythonCard.jsx";
+ 
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Navbar/>
+      <body>
+        <div className="hero">
+          <div className="welcome">Welcome to Progress!</div>
+          <h2>
+            Get ready for a coding adventure! Explore different programming
+            languages with anime-inspired lessons and take your skills to the
+            next level.
+          </h2>
+        </div>
+        <br />
+        <FundamentalsCard />
+        <HTMLcard />
+        <CSScard />
+        <JavascriptCard />
+        <PythonCard/>
+      </body>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
