@@ -9,13 +9,11 @@ import HTMLcard from "./homecards/HTMLcard.jsx";
 import CSScard from "./homecards/CSScard.jsx";
 import JavascriptCard from "./homecards/JavascriptCard.jsx";
 import PythonCard from "./homecards/PythonCard.jsx";
- 
-
 
 function App() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <body>
         <div className="hero">
           <div className="welcome">Welcome to Progress!</div>
@@ -26,11 +24,13 @@ function App() {
           </h2>
         </div>
         <br />
-        <FundamentalsCard />
-        <HTMLcard />
-        <CSScard />
-        <JavascriptCard />
-        <PythonCard/>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <FundamentalsCard />
+          <HTMLcard />
+          <CSScard />
+          <JavascriptCard />
+          <PythonCard />
+        </div>
       </body>
     </>
   );
