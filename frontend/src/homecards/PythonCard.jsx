@@ -6,16 +6,11 @@ import { BrowserRouter, Link } from "react-router-dom";
 function PythonCard() {
   return (
     <>
-      <div className="card">
-        <img
-          className="card-image"
-          src="https://via.placeholder.com/100"
-          alt="Anime Theme Card"
-        />
-        <h3>
-          <Link to="/python">Python</Link>
-        </h3>
-      </div>
+      <Link to="/python">
+        <div className="newcard">
+          <img src="src/assets/python.jpg" />
+        </div>
+      </Link>
     </>
   );
 }

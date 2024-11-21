@@ -12,13 +12,22 @@
     box-sizing: border-box;
 } */
 
-h1 {
+.titlename {
   font-family: 'Bangers';
     font-size: 40px;
     font-weight: 400;
     color: black;
-
 }
+
+.categorytitle {
+  font-family: 'Bangers';
+    font-size: 60px;
+    font-weight: 400;
+    color: black;
+    padding-top: 150px;
+}
+
+
 .card {
     border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
@@ -27,7 +36,7 @@ h1 {
     margin: 15px;
     text-align: center;
     min-width: 200px;
-    max-width: 250px;
+    max-width: 200px;
     display: inline-block;
     height: 300px;
     font-family: 'Bangers';
@@ -43,9 +52,13 @@ h1 {
   }
 
   body {
-    margin-top: 110px ;
     text-align: center;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
   }
+
 
   a {
     text-decoration: none;
@@ -66,8 +79,39 @@ h1 {
     margin-right: 200px;
     margin-left: 200px;
     font-family: "Quicksand", system-ui;
+   
+  }
+.whiteword {
+  font-family: 'Bangers';
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    padding-top: 130px;
+}
+  .fundamentalsbg {
+    background: url(src/assets/dbzblueee.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vw;
   }
 
+div img {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  box-shadow: 4px 7px 7px 0px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 300ms;
+}
+
+div img:hover {
+filter: grayscale(5);
+transform: scale(1.03);
+
+
+}
 
   .vocabCard {
     border: 1px solid hsl(0, 0%, 80%);
@@ -76,14 +120,14 @@ h1 {
     padding: 20px;
     margin: 15px;
     text-align: center;
-    min-width: 200px;
-    max-width: 250px;
+    width: 200px;
     display: inline-block;
     height: 100px;
     font-family: 'Quicksand';
     font-size: 20px;
     font-weight: 400;
     color: black;
+    background-color: white;
     
   }
 

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 10%;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Bangers';
+    font-size: 40px;
+    font-weight: 400;
+   
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}

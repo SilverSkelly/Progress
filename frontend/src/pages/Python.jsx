@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom';
 import Vocabword4 from '../vocabulary_cards/Python_vocab.jsx/Vocabword4';
-
+import Navbar from '../Navbar/Navbar';
 
 function Python() {
   return (
 <div>
-    <div><h1>Python Vocab</h1></div>
+    <Navbar/>
+    <div><h1 className="categorytitle">Python Vocab</h1></div>
     </div>
   )
 }
