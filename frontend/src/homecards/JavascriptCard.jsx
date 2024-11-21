@@ -6,16 +6,11 @@ import { BrowserRouter, Link } from "react-router-dom";
 function JavascriptCard() {
   return (
     <>
-      <div className="card">
-        <img
-          className="card-image"
-          src="https://via.placeholder.com/100"
-          alt="Anime Theme Card"
-        />
-        <h3>
-          <Link to="/javascript">JavaScript</Link>
-        </h3>
-      </div>
+      <Link to="/javascript">
+        <div className="newcard">
+          <img src="src/assets/js.jpg" />
+        </div>
+      </Link>
     </>
   );
 }

@@ -6,16 +6,13 @@ import { BrowserRouter, Link } from "react-router-dom";
 function HTMLcard() {
   return (
     <>
-      <div className="card">
-        <img
-          className="card-image"
-          src="https://via.placeholder.com/100"
-          alt="Anime Theme Card"
-        />
-        <h3>
-          <Link to="/html">HTML</Link>
-        </h3>
-      </div>
+    <Link to="/html">
+        <div className="newcard">
+          <img src="src/assets/html.jpg" />
+        </div>
+      </Link>
+        
+      
     </>
   );
 }

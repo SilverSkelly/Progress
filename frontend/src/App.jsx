@@ -2,7 +2,7 @@ import { useState } from "react";
 import Card from "./Card.jsx";
 import "./App.jsx";
 import "./index.css";
-import Navbar from "./nav/navbar.jsx";
+import Navbar from "./Navbar/Navbar.jsx";
 import FundamentalsCard from "./homecards/FundamentalsCard.jsx";
 import Fundamentals from "./pages/Fundamentals";
 import HTMLcard from "./homecards/HTMLcard.jsx";
